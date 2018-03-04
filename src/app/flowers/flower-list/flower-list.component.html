@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success"> New flower </button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <a href="#" class="list-group-item clearfix" *ngFor="let flower of flowers" >
+            <div class="pull-left">
+                <h4 class="list-group-item-heading" > {{flower.name}} </h4>
+                <p class="list-group-item-text" > {{ flower.description }} </p>
+            </div>
+            <span class="pull-right" >
+                <img src="{{flower.imagePath}}" alt=" {{ flower.name }} " class="img-responsive" style="max-height: 50px;" >
+            </span>
+        </a>
+        <app-flower-item></app-flower-item>
+    </div>
+</div>
+
+
