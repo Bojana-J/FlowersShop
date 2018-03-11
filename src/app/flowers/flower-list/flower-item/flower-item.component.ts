@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Flower } from '../../flower.model';
 
 @Component({
   selector: 'app-flower-item',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./flower-item.component.css']
 })
 export class FlowerItemComponent implements OnInit {
+ @Input() flower: Flower;
 
   constructor() { }
 
